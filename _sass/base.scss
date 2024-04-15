@@ -3,13 +3,20 @@
 
 }
 header {
-    .nav-wrapper {
-        padding-bottom: 115px;
-    }
     border: 0 !important;
     background-color: #F9EFE7;
-    margin: 20px;
-    padding: 20px 20px 140px;
+    padding: 20px 20px 60px;
+    @media(min-width: 900px) {
+        padding: 20px 20px 140px;
+        
+    }
+    .nav-wrapper {
+        padding-bottom: 60px;
+        @media(min-width: 760px) {
+            padding-bottom: 115px;
+        }
+        
+    }
     .site-title {
         font-weight: 900;
         font-size: 20px;
@@ -17,6 +24,8 @@ header {
     }
     .site-nav {
         display: flex;
+        border: none;
+        top: 25px;
         .trigger {
             display: flex;
             padding-top: 15px;
@@ -28,10 +37,18 @@ header {
             }
         }
     }
+    .nav-trigger-label {
+        background-color: #F9EFE7;
+        border: none;
+    }
     .hero-cta.row {
         padding: 0;
         h1 {
-            line-height: 80px;
+            line-height: 60px;
+            @media(min-width: 900px) {
+                line-height: 80px;
+            }
+            
         }
         .highlight {
             border-bottom: 14px solid yellow;
@@ -70,12 +87,30 @@ header {
         }
     }
 }
+header.resume-wrapper {
+    h1{
+        text-align: center;
+    }
+}
+main.resume-wrapper {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    ul li {
+        list-style-position: inside;
+    }
+    
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Abril Fatface;
     font-weight: 700 !important;
 }
 h1, .h1 {
-    font-size: 56px;
+    font-size: 38px;
+    @media(min-width: 760px) {
+        font-size: 56px;
+    }
+    
 }
 h2, .h2 {
     font-size: 40px;
@@ -106,6 +141,8 @@ a.btn {
     }
 }
 main {
+    max-width: none;
+   
     .project-image {
         margin-top: -125px;
         box-shadow: 0px 0px 30px 0px;
@@ -115,15 +152,23 @@ main {
 
     .work-wrapper {
         .row {
-            margin-bottom: 260px;
+            margin-bottom: 80px;
+            @media (min-width: 900px) {
+                margin-bottom: 260px;
+            }
+            
         }
         
         .latest-work-title {
             text-transform: uppercase;
             color: #716F73;
-            margin-bottom: 60px;
-            margin-top: 160px;
+            margin-bottom: 30px;
+            margin-top: 60px;
             font-size: 26px;
+            @media(min-width: 900px) {
+                margin-top: 160px;
+                margin-bottom: 60px;
+            }
 
         }
         .latest-title {
@@ -136,17 +181,24 @@ main {
                 padding: 6px 10px;
                 margin-right: 16px;
                 font-weight: 700;
+                margin-bottom: 10px;
+                display: inline-block;
             }
         }
         a.btn {
             margin-top: 64px;
+            margin-bottom: 40px;
         }
     }
     .what-ido {
+        h2 {
+            margin-bottom: 40px;
+        }
         .exp-title {
             font-weight: 700;
             font-size: 26px;
             padding-bottom: 9px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
         }
         .pb-80 {
             padding-bottom: 80px;
@@ -159,10 +211,16 @@ main {
             .exp-title {
                 font-weight: 700;
                 font-size: 24px;
+                padding-bottom: 0;
+                margin-bottom: 0;
             }
             .exp-company {
                 color:#716F73;
                 font-size: 14px;
+                margin-bottom: 15px;
+            }
+            ul {
+                padding-bottom: 40px;
             }
         }
     }
@@ -172,14 +230,22 @@ main {
 }
 footer {
     background-color: #F9EFE7;
-    margin: 20px;
-    padding: 50px 20px 140px;
+    padding: 30px 20px 20px;
     position: relative;
+    @media (min-width: 760px) {
+        padding: 50px 20px 20px;
+    }
+    .container {
+        padding: 0;
+        max-width: 1320px;
+        position: relative;
+        .row {
+            padding: 0;
+        }
+    }
     .social-icons {
-        float: right;
-        position: absolute;
-        bottom: 40px;
-        right: 230px;
+        margin-top: 75px;
+    
         .social {
             width: 35px;
             height: 35px;
@@ -188,22 +254,30 @@ footer {
             &:focus {
                 fill: black;
             }
+            @media (min-width: 760px) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
-        .linkedin:hover,
-        .linkedin:focus {
-            background:url('/assets/pictures/black-linkedin') no-repeat 0 0;
+        .social:nth-child(2) {
+            @media (min-width: 760px) {
+                right: 50px;
+            }
         }
+    }
+    .footer-info {
+        padding: 5px;
     }
     .contact-email {
         color: black !important;
-        font-weight: 700;
-        
+        font-weight: 700;   
     }
     .copyright {
-        position: absolute;
-        bottom: 20px;
-        left: 230px;
-        color:#716F73;
+        color:#6E6B70;
+        margin-top: 20px;
+        font-size: 14px;
+        width: auto;
+          
     }
-    
 }

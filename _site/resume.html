@@ -26,13 +26,13 @@
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jennifer Houde" />
 </head>
 <body>
-    <header class="site-header" role="banner">
+    <header class="site-header resume-wrapper" role="banner">
 
         <div class="wrapper nav-wrapper">
     <a class="site-title" rel="author" href="/">Jennifer Houde.</a>
     <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
+        <label class="nav-trigger-label" for="nav-trigger" aria-label="menu">
         <span class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
             <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
@@ -48,12 +48,12 @@
     </nav>
 </div>
             <div class="wrapper">
-              <div class="hero-cta row"><div class="col-8">
+              <div class="hero-cta row">
                 <h1>My Resume</h1>
-              </div></div>
+              </div>
             </div>
       </header>
-<main class="page-content" aria-label="Content">
+<main class="page-content resume-wrapper" aria-label="Content">
     
     <div class="wrapper resume">
         <div class="work">
@@ -83,7 +83,7 @@
         </div>
         <div>
           <p class="exp-title">Programmer and Solution Analyst</p>
-          <span class="exp-company">OpenPlus - Ottawa 09/2023 - 11/2023</span>
+          <p class="exp-company">OpenPlus - Ottawa 09/2023 - 11/2023</p>
           <ul>
             <li>Worked on Drupal 9 and Drupal 10 site for multiple Government of Canada site using the Wxt Distribution</li>
             <li>Performed system analysis, documentation, testing, implementation, and user support for platform transitions.</li>
@@ -92,7 +92,7 @@
         </div>
         <div>
           <p class="exp-title">Web Engineer and Accessibility Specialist</p>
-          <span class="exp-company">CivicActions, Inc - California 11/2020 - 08/2023</span>
+          <p class="exp-company">CivicActions, Inc - California 11/2020 - 08/2023</p>
           <ul>
             <li>Collected, defined, and translated user requirements into project designs and implementation plans for the development of Governement Drupal 7 and Drupal 8 Sites and Moodle sites using the USWDS theme</li>
             <li>Acted as tech lead for multiple projects.</li>
@@ -101,7 +101,7 @@
         </div>
         <div>
           <p class="exp-title">Web Developer</p>
-          <span class="exp-company">OpenConcept - Ottawa 03/2020 - 11/2020</span>
+          <p class="exp-company">OpenConcept - Ottawa 03/2020 - 11/2020</p>
           <ul>
             <li>Architecting, designing, and implementing new features on multiple Drupal 8 Sites using the Wxt Distribution.</li>
             <li>Created site documentation and accessible documents.</li>
@@ -109,7 +109,7 @@
         </div>
         <div>
           <p class="exp-title">Web Developer</p>
-          <span class="exp-company">OPIN - Ottawa 06/2018 - 03/2020</span>
+          <p class="exp-company">OPIN - Ottawa 06/2018 - 03/2020</p>
           <ul>
             <li>Architecting, designing, and implementing new features on multiple Drupal 8 sites.</li>
             <li>Multi-tasked across multiple functions and roles to meet deadlines and organizational expectations.</li>
@@ -131,21 +131,26 @@
       </div>
       
   
-      <div class="col-md-6">
+      <div class="col-md-6 pt-2 footer-info">
   
         <div>
           <p>If you need a modern and powerful website for your business, startup or yourself, I am available for work. You can email me directly at <a class="contact-email" href="mailto:jhoude5@yahoo.com">jhoude5@yahoo.com</a></p>
         </div>
-        <div class="social-icons">
-          <a class="social" href="https://www.linkedin.com/in/jennifer-houde-81119a91/">
-            <i class="fa-brands fa-linkedin fa-2xl"></i></a>
-          <a class="social" href="https://github.com/jhoude5">
-            <i class="fa-brands fa-github fa-2xl"></i></a>
-        </div>
+        
           
         
       </div>
-      <p class="copyright">© All rights reserved – Jennifer Houde</p>
+      <div class="col-md-6"></div>
+      <div class="social-icons col-md-6">
+        <a class="social" href="https://www.linkedin.com/in/jennifer-houde-81119a91/" aria-label="linkedin link">
+          <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a class="social" href="https://github.com/jhoude5" aria-label="github link">
+          <i class="fa-brands fa-github fa-2xl"></i></a>
+      </div>
+      <div class="copyright-wrapper">
+        <p class="copyright">© All rights reserved – Jennifer Houde</p>
+      </div>
+      
     </div>
   </div>
   </footer>
