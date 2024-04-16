@@ -41,6 +41,9 @@ header {
         background-color: #F9EFE7;
         border: none;
     }
+    .nav-trigger-label.opened {
+        display: none !important;
+    }
     .hero-cta.row {
         padding: 0;
         h1 {
@@ -86,6 +89,14 @@ header {
             
         }
     }
+    .btn-close {
+        display: none;
+        margin: 5px;
+    }
+    .btn-close.opened {
+        display: block;
+    }
+    
 }
 header.resume-wrapper {
     h1{
